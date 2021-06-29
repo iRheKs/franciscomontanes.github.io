@@ -1,0 +1,210 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: auto;
+  font-size: 20px;
+  background-color: black;
+}
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 33.33%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: -webkit-fill-available;
+  position: relative;
+}
+.navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+    z-index: 1020;
+}
+
+.list{
+  height: max-content;
+}
+.text{
+  float:left;
+  width: 100%;
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+
+.box{
+  float:left;
+  width: 80%;
+  align-self: center;
+  margin-left: 10%;
+  margin-top: 2%;
+  position: relative;
+  background-color: #555;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box:hover{
+  background-color: #333;
+}
+.imageBox{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  position: relative;
+  object-fit: cover;
+  display: block;
+  padding-right: 20px;
+}
+.imageContainer{
+  max-width:100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem !important;
+}
+.imageContainer img{
+height: auto;
+max-width:100%;
+width: 100%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block !important;
+  border-style: none;
+}
+@media (max-width: 1200px) {
+  .box {
+    font-size: calc(1.255rem + 0.06vw) ; } }
+.description{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-direction: column !important;
+  text-align: left;
+  position: relative;
+  display: flex !important;
+  font-size: 1.3rem;
+  padding: 1%;
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+    margin-left: auto;
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+}
+.skil-column{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 1.5rem !important;
+}
+@media (min-width: 768px) {
+  .col-res{
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+  }
+}
+
+.hidden{
+  display: none;
+}
+.spacing{
+  height: 10%;
+}
+.m{
+  height: 30%;
+}
+.s{
+height: 10%;
+}
+.l{
+height: 40%;
+}
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+a:link{
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited{
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active{
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer{
+  color: white;
+  text-align: end;
+  padding-right: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000; 
+}
+
+#Home {background-color: black;}
+#Games {background-color: black;}
+#About {background-color: black;}
