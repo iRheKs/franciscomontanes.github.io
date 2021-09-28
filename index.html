@@ -11,8 +11,8 @@
 <body>
 	<div class="navbar">
 		<button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen">Home</button>
-		<button class="tablink" onclick="openPage('Games', this, 'black')">Games</button>
 		<button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+		<button class="tablink" onclick="openPage('Projects', this, 'black')">Projects</button>
 	</div>
 
 	<div id="Home" class="tabcontent">
@@ -28,17 +28,17 @@
 	</div>
 
 
-	<div id="Games" class="tabcontent list">
+	<div id="Projects" class="tabcontent list">
 
 		<div class="row">
 			<div class="text">
-				<h1>GAMES</h1>
+				<h1>Projects</h1>
 				<h3>Here there's some of the games and projects I've made</h3>
 			</div>
-			<button class="box" onclick="document.location='https://montypac.itch.io/pub-start-up'" target="_blank">
+			<button class="box" onclick="window.open('https://montypac.itch.io/pub-start-up','_blank')">
 				<div class="imageBox">
 					<div class="imageContainer">
-						<img src="resources/games/pubclicker.png" alt="PUB CLICKER">
+						<img src="resources/projects/pubclicker.png" alt="PUB CLICKER">
 					</div>
 				</div>
 				<div class="text description">
@@ -49,16 +49,17 @@
 					</p>
 				</div>
 			</button>
-			<button class="box hidden">
+			<button class="box" onclick="window.open('https://github.com/iRheKs/TypingGameEngine', '_blank')">
 				<div class="imageBox">
 					<div class="imageContainer">
-						<img src="resources/games/pubclicker.png" alt="">
+						<img src="resources/projects/TypingGameEngineIcon.png" alt="TYPING GAME ENGINE">
 					</div>
 				</div>
 				<div class="text description">
-					<h2>Title</br></h2>
-					<p>Made for</br>
-						Commentary.
+					<h2>Typing Game Engine</br></h2>
+					<p>A godot plugin made by my self</br>
+						This is my first plugin in godot which can help create typing like games in an easy way.
+						Godot is a great open source game engine and very versatile.
 					</p>
 				</div>
 			</button>
